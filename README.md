@@ -37,7 +37,7 @@ Functions:
         - fgets(buffer, size, file)	        - Reads a line from a file.
         - sscanf(input, "%d", &var)	        - Parses an integer (or other formatted value) from a string. Safer than scanf().
         - snprintf(dest, size, format, ...)	- Safely formats a string into a buffer.
-        - fopen(filename, mode)	            - Opens a file (for reading or writing).
+        - fopen(filename, mode)             - Opens a file (for reading or writing).
         - fclose(file)                      - Closes an open file.
         - fprintf(file, format, ...)        - Writes formatted output to a file (like printf but for files).
 
