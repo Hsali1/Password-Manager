@@ -2,14 +2,14 @@
 
 ## Features/Objectives:
 
-    - Add, delete, get credentials - Based on unique service names (eg: Google, Netflix, etc.) 
-    - Save to encrypted file - XOR-based encryption on disk
-    - Load from encrypted file - Decryption on program start
-    - Master password - Required to access the program
-    - Prevent duplicate services - Doesn't allow repeated entries for the same service
-    - Search functionality - Search by partial match of service
-    - Partial Search - Allow partial searches to find all services
-    - Command-line UI - Clear menu and formatted output
+    - Add, delete, get credentials         - Based on unique service names (eg: Google, Netflix, etc.) 
+    - Save to encrypted file               - XOR-based encryption on disk
+    - Load from encrypted file             - Decryption on program start
+    - Master password                      - Required to access the program
+    - Prevent duplicate services           - Doesn't allow repeated entries for the same service
+    - Search functionality                 - Search by partial match of service
+    - Partial Search                       - Allow partial searches to find all services
+    - Command-line UI                      - Clear menu and formatted output
 
 ## Sample File
 
@@ -21,15 +21,18 @@ netflix|hassan123|password123
 ```
 But encrypted.
 
+---
+
 ### For my reference
 
 Functions:
-    string.h
+
+    - string.h
         - strncpy(dest, src, n) - Copies up to n characters from src to dest. Used for copying strings safely.
         - strcmp(a, b) - Compares two strings. Returns 0 if they are equal.
         - strtok(str, delim) - Tokenizes a string — splits it into chunks by a delimiter
         - strcspn(str, "\n") - Returns the index of the first newline character \n. I use it to strip trailing newlines.
-    stdio.h	
+    - stdio.h	
         - fgets(buffer, size, stdin) - Reads a line of input from stdin (or file), including spaces, and stops at newline or buffer size.
         - fgets(buffer, size, file)	- Reads a line from a file.
         - sscanf(input, "%d", &var)	- Parses an integer (or other formatted value) from a string. Safer than scanf().
@@ -38,9 +41,13 @@ Functions:
         - fclose(file) - Closes an open file.
         - fprintf(file, format, ...) - Writes formatted output to a file (like printf but for files).
 
+---
+
 ## Notes
 
 Could use Macros to make the code cleaner.
+
+---
 
 ## Example run:
 ```
