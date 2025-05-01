@@ -28,18 +28,18 @@ But encrypted.
 Functions:
 
     - string.h
-        - strncpy(dest, src, n) - Copies up to n characters from src to dest. Used for copying strings safely.
-        - strcmp(a, b) - Compares two strings. Returns 0 if they are equal.
-        - strtok(str, delim) - Tokenizes a string — splits it into chunks by a delimiter
-        - strcspn(str, "\n") - Returns the index of the first newline character \n. I use it to strip trailing newlines.
+        - strncpy(dest, src, n)             - Copies up to n characters from src to dest. Used for copying strings safely.
+        - strcmp(a, b)                      - Compares two strings. Returns 0 if they are equal.
+        - strtok(str, delim)                - Tokenizes a string — splits it into chunks by a delimiter
+        - strcspn(str, "\n")                - Returns the index of the first newline character \n. I use it to strip trailing newlines.
     - stdio.h	
-        - fgets(buffer, size, stdin) - Reads a line of input from stdin (or file), including spaces, and stops at newline or buffer size.
-        - fgets(buffer, size, file)	- Reads a line from a file.
-        - sscanf(input, "%d", &var)	- Parses an integer (or other formatted value) from a string. Safer than scanf().
+        - fgets(buffer, size, stdin)        - Reads a line of input from stdin (or file), including spaces, and stops at newline or buffer size.
+        - fgets(buffer, size, file)	        - Reads a line from a file.
+        - sscanf(input, "%d", &var)	        - Parses an integer (or other formatted value) from a string. Safer than scanf().
         - snprintf(dest, size, format, ...)	- Safely formats a string into a buffer.
-        - fopen(filename, mode)	- Opens a file (for reading or writing).
-        - fclose(file) - Closes an open file.
-        - fprintf(file, format, ...) - Writes formatted output to a file (like printf but for files).
+        - fopen(filename, mode)	            - Opens a file (for reading or writing).
+        - fclose(file)                      - Closes an open file.
+        - fprintf(file, format, ...)        - Writes formatted output to a file (like printf but for files).
 
 ---
 
